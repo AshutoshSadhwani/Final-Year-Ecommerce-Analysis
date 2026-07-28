@@ -1,0 +1,501 @@
+﻿customer_id,customer_name,gender,age,city,state,region,join_date,loyalty_scheme,loyalty_rating,total_orders,total_spending
+C0001,Customer 1,Female,30,Bengaluru,Karnataka,South,2024-01-26,Platinum,3,28,44968
+C0002,Customer 2,Female,39,Bengaluru,Karnataka,South,2025-01-20,Silver,5,10,20230
+C0003,Customer 3,Female,37,Delhi,Delhi,North,2025-02-03,Silver,4,7,9688
+C0004,Customer 4,Male,39,Delhi,Delhi,North,2023-02-14,Gold,4,21,32466
+C0005,Customer 5,Female,54,Bengaluru,Karnataka,South,2024-04-02,Gold,4,23,84571
+C0006,Customer 6,Female,41,Ahmedabad,Gujarat,West,2024-05-21,Gold,1,20,89220
+C0007,Customer 7,Female,27,Nagpur,Maharashtra,West,2023-10-04,Gold,4,23,111780
+C0008,Customer 8,Male,19,Nagpur,Maharashtra,West,2024-11-30,Gold,2,18,38988
+C0009,Customer 9,Female,25,Nagpur,Maharashtra,West,2024-07-19,Gold,4,15,64005
+C0010,Customer 10,Male,26,Nagpur,Maharashtra,West,2023-05-16,Platinum,2,26,38090
+C0011,Customer 11,Male,26,Bengaluru,Karnataka,South,2024-11-05,Gold,4,22,19954
+C0012,Customer 12,Male,27,Chennai,Tamil Nadu,South,2024-03-06,Silver,4,14,14784
+C0013,Customer 13,Male,47,Bengaluru,Karnataka,South,2023-04-15,Platinum,4,27,131463
+C0014,Customer 14,Female,35,Bengaluru,Karnataka,South,2024-01-23,Gold,2,22,101750
+C0015,Customer 15,Male,51,Chennai,Tamil Nadu,South,2023-10-09,Gold,3,23,111021
+C0016,Customer 16,Male,42,Chennai,Tamil Nadu,South,2023-06-01,Gold,4,22,61314
+C0017,Customer 17,Male,36,Nagpur,Maharashtra,West,2024-11-21,Platinum,4,26,77740
+C0018,Customer 18,Female,24,Delhi,Delhi,North,2024-05-12,None,2,2,6568
+C0019,Customer 19,Male,57,Bengaluru,Karnataka,South,2023-11-10,Silver,5,5,10275
+C0020,Customer 20,Female,31,Delhi,Delhi,North,2025-02-16,Platinum,5,26,101634
+C0021,Customer 21,Male,31,Ahmedabad,Gujarat,West,2025-01-23,Gold,4,17,78115
+C0022,Customer 22,Male,25,Ahmedabad,Gujarat,West,2023-09-20,Silver,5,5,12725
+C0023,Customer 23,Female,50,Chennai,Tamil Nadu,South,2023-08-12,Silver,1,11,47630
+C0024,Customer 24,Female,24,Ahmedabad,Gujarat,West,2024-10-27,Gold,4,19,77710
+C0025,Customer 25,Female,34,Nagpur,Maharashtra,West,2024-06-29,Silver,5,11,33088
+C0026,Customer 26,Female,48,Bengaluru,Karnataka,South,2025-03-02,None,2,4,19064
+C0027,Customer 27,Female,39,Ahmedabad,Gujarat,West,2024-06-12,Gold,4,16,42496
+C0028,Customer 28,Female,28,Bengaluru,Karnataka,South,2023-10-01,Silver,5,6,7944
+C0029,Customer 29,Female,45,Bengaluru,Karnataka,South,2023-10-07,Gold,4,16,72336
+C0030,Customer 30,Female,26,Delhi,Delhi,North,2023-07-03,None,3,3,14880
+C0031,Customer 31,Male,42,Bengaluru,Karnataka,South,2024-06-04,None,3,2,4888
+C0032,Customer 32,Female,23,Chennai,Tamil Nadu,South,2023-06-05,None,2,1,1225
+C0033,Customer 33,Male,45,Nagpur,Maharashtra,West,2024-08-22,None,3,2,4430
+C0034,Customer 34,Female,41,Bengaluru,Karnataka,South,2024-10-12,Platinum,4,25,94900
+C0035,Customer 35,Male,37,Chennai,Tamil Nadu,South,2024-01-04,Gold,1,22,12012
+C0036,Customer 36,Male,58,Chennai,Tamil Nadu,South,2023-07-11,Gold,2,18,12924
+C0037,Customer 37,Female,31,Bengaluru,Karnataka,South,2024-06-06,Platinum,4,30,142620
+C0038,Customer 38,Male,50,Delhi,Delhi,North,2023-04-02,Gold,4,20,35900
+C0039,Customer 39,Female,28,Ahmedabad,Gujarat,West,2025-02-07,Silver,4,7,9660
+C0040,Customer 40,Male,48,Delhi,Delhi,North,2024-08-27,Gold,5,20,45680
+C0041,Customer 41,Female,46,Nagpur,Maharashtra,West,2025-01-11,Platinum,1,25,19625
+C0042,Customer 42,Male,55,Delhi,Delhi,North,2024-07-12,Gold,4,22,73282
+C0043,Customer 43,Male,43,Chennai,Tamil Nadu,South,2024-09-04,Gold,1,22,77000
+C0044,Customer 44,Male,25,Nagpur,Maharashtra,West,2024-07-12,Platinum,5,30,50460
+C0045,Customer 45,Female,19,Nagpur,Maharashtra,West,2024-07-16,Gold,2,15,18030
+C0046,Customer 46,Female,35,Nagpur,Maharashtra,West,2023-07-11,None,2,3,7914
+C0047,Customer 47,Male,33,Ahmedabad,Gujarat,West,2024-02-06,None,5,1,2768
+C0048,Customer 48,Female,50,Chennai,Tamil Nadu,South,2024-07-05,Silver,4,8,8560
+C0049,Customer 49,Male,32,Nagpur,Maharashtra,West,2023-04-20,None,5,4,13424
+C0050,Customer 50,Male,21,Nagpur,Maharashtra,West,2024-05-22,None,4,2,6842
+C0051,Customer 51,Female,23,Chennai,Tamil Nadu,South,2024-09-18,Silver,4,9,38889
+C0052,Customer 52,Female,35,Chennai,Tamil Nadu,South,2024-06-24,Silver,3,12,39864
+C0053,Customer 53,Male,28,Chennai,Tamil Nadu,South,2024-10-16,Silver,4,14,12754
+C0054,Customer 54,Male,59,Chennai,Tamil Nadu,South,2024-02-03,None,3,2,1558
+C0055,Customer 55,Female,40,Chennai,Tamil Nadu,South,2024-06-01,Silver,4,10,13730
+C0056,Customer 56,Male,53,Delhi,Delhi,North,2024-03-18,Gold,5,17,82739
+C0057,Customer 57,Male,18,Ahmedabad,Gujarat,West,2024-04-11,Silver,2,11,14872
+C0058,Customer 58,Female,45,Chennai,Tamil Nadu,South,2024-06-13,Silver,2,13,9035
+C0059,Customer 59,Female,26,Bengaluru,Karnataka,South,2023-03-28,Platinum,5,25,106875
+C0060,Customer 60,Male,49,Nagpur,Maharashtra,West,2024-07-07,Silver,1,10,28060
+C0061,Customer 61,Male,35,Delhi,Delhi,North,2023-11-16,Gold,3,21,59409
+C0062,Customer 62,Male,49,Ahmedabad,Gujarat,West,2024-07-19,Gold,4,16,23440
+C0063,Customer 63,Female,43,Delhi,Delhi,North,2023-10-27,None,4,1,2014
+C0064,Customer 64,Female,30,Bengaluru,Karnataka,South,2024-12-04,Platinum,5,30,59700
+C0065,Customer 65,Female,19,Bengaluru,Karnataka,South,2024-11-17,Silver,2,11,33825
+C0066,Customer 66,Female,21,Delhi,Delhi,North,2023-12-20,Silver,1,7,27720
+C0067,Customer 67,Male,38,Chennai,Tamil Nadu,South,2024-04-13,None,2,1,2369
+C0068,Customer 68,Female,38,Chennai,Tamil Nadu,South,2024-06-20,Silver,3,12,10440
+C0069,Customer 69,Male,27,Chennai,Tamil Nadu,South,2024-04-12,Platinum,2,28,47152
+C0070,Customer 70,Female,47,Nagpur,Maharashtra,West,2023-01-03,Gold,5,20,42860
+C0071,Customer 71,Female,30,Bengaluru,Karnataka,South,2024-06-04,Gold,2,24,107016
+C0072,Customer 72,Female,47,Bengaluru,Karnataka,South,2023-11-01,Gold,1,15,68610
+C0073,Customer 73,Male,26,Delhi,Delhi,North,2024-02-20,None,3,1,2829
+C0074,Customer 74,Female,35,Delhi,Delhi,North,2024-11-04,None,2,2,9166
+C0075,Customer 75,Male,26,Bengaluru,Karnataka,South,2024-10-20,Gold,3,17,16082
+C0076,Customer 76,Female,42,Ahmedabad,Gujarat,West,2023-01-08,Silver,3,14,11004
+C0077,Customer 77,Male,34,Ahmedabad,Gujarat,West,2024-05-18,Gold,4,21,23646
+C0078,Customer 78,Female,35,Bengaluru,Karnataka,South,2024-11-15,Gold,2,20,33540
+C0079,Customer 79,Female,35,Bengaluru,Karnataka,South,2023-05-13,Gold,4,20,61120
+C0080,Customer 80,Male,32,Chennai,Tamil Nadu,South,2024-01-30,Silver,4,9,41220
+C0081,Customer 81,Male,53,Bengaluru,Karnataka,South,2024-12-16,Silver,2,10,26990
+C0082,Customer 82,Female,58,Chennai,Tamil Nadu,South,2024-05-18,None,3,4,17096
+C0083,Customer 83,Female,55,Nagpur,Maharashtra,West,2024-12-30,Silver,2,14,21686
+C0084,Customer 84,Female,28,Ahmedabad,Gujarat,West,2023-04-05,Platinum,3,29,45298
+C0085,Customer 85,Male,35,Nagpur,Maharashtra,West,2023-04-27,Gold,1,15,73155
+C0086,Customer 86,Male,54,Bengaluru,Karnataka,South,2023-12-28,Platinum,3,28,34804
+C0087,Customer 87,Female,24,Delhi,Delhi,North,2023-01-22,Gold,5,16,74368
+C0088,Customer 88,Male,44,Bengaluru,Karnataka,South,2025-01-16,Platinum,3,28,101108
+C0089,Customer 89,Male,32,Chennai,Tamil Nadu,South,2024-04-15,Gold,5,22,37796
+C0090,Customer 90,Male,54,Ahmedabad,Gujarat,West,2024-04-12,Platinum,5,27,63909
+C0091,Customer 91,Male,34,Delhi,Delhi,North,2023-03-24,Silver,3,12,7872
+C0092,Customer 92,Female,58,Ahmedabad,Gujarat,West,2025-02-24,Platinum,3,30,70020
+C0093,Customer 93,Female,30,Ahmedabad,Gujarat,West,2024-09-27,Gold,5,15,28770
+C0094,Customer 94,Female,59,Ahmedabad,Gujarat,West,2023-06-29,None,2,4,14668
+C0095,Customer 95,Female,43,Ahmedabad,Gujarat,West,2024-10-04,None,4,2,7064
+C0096,Customer 96,Male,32,Nagpur,Maharashtra,West,2025-02-24,Gold,4,15,33810
+C0097,Customer 97,Male,22,Chennai,Tamil Nadu,South,2023-08-29,Silver,2,14,52598
+C0098,Customer 98,Male,26,Chennai,Tamil Nadu,South,2023-01-28,Silver,5,13,13624
+C0099,Customer 99,Male,18,Ahmedabad,Gujarat,West,2025-02-07,Gold,5,20,84980
+C0100,Customer 100,Male,30,Ahmedabad,Gujarat,West,2023-05-27,Platinum,4,27,36450
+C0101,Customer 101,Male,55,Chennai,Tamil Nadu,South,2024-01-19,Silver,3,12,55752
+C0102,Customer 102,Male,52,Bengaluru,Karnataka,South,2024-07-16,Silver,3,10,37870
+C0103,Customer 103,Male,51,Chennai,Tamil Nadu,South,2024-12-12,Gold,5,21,21798
+C0104,Customer 104,Female,37,Delhi,Delhi,North,2023-10-06,Silver,2,5,10445
+C0105,Customer 105,Male,18,Chennai,Tamil Nadu,South,2023-03-23,Gold,1,23,45057
+C0106,Customer 106,Female,29,Delhi,Delhi,North,2024-10-09,Gold,5,23,47357
+C0107,Customer 107,Male,56,Bengaluru,Karnataka,South,2023-04-28,Platinum,3,26,45994
+C0108,Customer 108,Female,43,Bengaluru,Karnataka,South,2024-07-13,None,5,3,12690
+C0109,Customer 109,Male,56,Ahmedabad,Gujarat,West,2024-02-17,Gold,5,19,62016
+C0110,Customer 110,Male,25,Delhi,Delhi,North,2023-10-27,Silver,3,14,67144
+C0111,Customer 111,Female,18,Delhi,Delhi,North,2025-01-11,Silver,2,9,28836
+C0112,Customer 112,Female,39,Bengaluru,Karnataka,South,2023-07-15,Silver,3,10,29690
+C0113,Customer 113,Female,39,Nagpur,Maharashtra,West,2023-03-29,Gold,5,15,61890
+C0114,Customer 114,Male,26,Delhi,Delhi,North,2023-10-03,Silver,2,8,25064
+C0115,Customer 115,Male,23,Chennai,Tamil Nadu,South,2023-04-14,Platinum,1,25,23875
+C0116,Customer 116,Female,35,Delhi,Delhi,North,2023-06-30,Silver,5,8,19680
+C0117,Customer 117,Female,26,Chennai,Tamil Nadu,South,2024-10-27,Gold,4,24,29448
+C0118,Customer 118,Female,49,Bengaluru,Karnataka,South,2023-11-14,Silver,1,9,28395
+C0119,Customer 119,Male,31,Bengaluru,Karnataka,South,2024-10-02,Silver,1,9,6498
+C0120,Customer 120,Female,24,Bengaluru,Karnataka,South,2023-05-24,Platinum,3,25,38725
+C0121,Customer 121,Female,54,Bengaluru,Karnataka,South,2024-01-12,None,1,4,14920
+C0122,Customer 122,Female,60,Nagpur,Maharashtra,West,2023-01-11,Gold,4,15,65805
+C0123,Customer 123,Male,55,Ahmedabad,Gujarat,West,2023-05-24,Silver,2,11,36751
+C0124,Customer 124,Male,25,Nagpur,Maharashtra,West,2023-05-11,Gold,2,23,40595
+C0125,Customer 125,Male,51,Chennai,Tamil Nadu,South,2023-08-29,Platinum,2,26,39442
+C0126,Customer 126,Male,53,Bengaluru,Karnataka,South,2023-03-02,Silver,3,10,31680
+C0127,Customer 127,Female,47,Chennai,Tamil Nadu,South,2023-06-17,Gold,4,22,23914
+C0128,Customer 128,Female,44,Delhi,Delhi,North,2023-09-01,Silver,1,6,22242
+C0129,Customer 129,Female,31,Ahmedabad,Gujarat,West,2024-02-16,Platinum,4,26,115518
+C0130,Customer 130,Female,29,Chennai,Tamil Nadu,South,2024-08-29,Platinum,5,27,22734
+C0131,Customer 131,Male,58,Ahmedabad,Gujarat,West,2023-07-02,Gold,2,18,83502
+C0132,Customer 132,Male,47,Nagpur,Maharashtra,West,2024-12-18,Gold,1,21,90321
+C0133,Customer 133,Male,29,Ahmedabad,Gujarat,West,2024-09-21,Platinum,4,28,19516
+C0134,Customer 134,Female,26,Bengaluru,Karnataka,South,2024-01-28,None,2,4,16052
+C0135,Customer 135,Male,33,Ahmedabad,Gujarat,West,2024-05-03,Silver,1,10,18140
+C0136,Customer 136,Female,37,Bengaluru,Karnataka,South,2023-09-16,Silver,2,10,9650
+C0137,Customer 137,Male,53,Bengaluru,Karnataka,South,2024-02-15,Gold,3,22,23694
+C0138,Customer 138,Female,20,Chennai,Tamil Nadu,South,2024-12-29,Gold,1,24,26928
+C0139,Customer 139,Female,22,Ahmedabad,Gujarat,West,2023-09-03,Platinum,1,26,52390
+C0140,Customer 140,Male,35,Nagpur,Maharashtra,West,2024-08-08,Gold,2,23,80500
+C0141,Customer 141,Female,27,Delhi,Delhi,North,2024-12-15,Silver,1,6,9516
+C0142,Customer 142,Male,55,Delhi,Delhi,North,2023-01-17,None,4,1,3149
+C0143,Customer 143,Male,38,Bengaluru,Karnataka,South,2024-07-08,Silver,3,13,13221
+C0144,Customer 144,Female,58,Delhi,Delhi,North,2024-04-03,Platinum,5,29,100572
+C0145,Customer 145,Male,24,Bengaluru,Karnataka,South,2025-02-18,None,2,3,6330
+C0146,Customer 146,Male,55,Chennai,Tamil Nadu,South,2024-05-05,Gold,3,20,100000
+C0147,Customer 147,Male,43,Ahmedabad,Gujarat,West,2023-02-07,Gold,1,21,12411
+C0148,Customer 148,Male,40,Nagpur,Maharashtra,West,2024-11-03,Platinum,2,27,90099
+C0149,Customer 149,Female,56,Delhi,Delhi,North,2025-02-23,Silver,5,13,51610
+C0150,Customer 150,Male,19,Nagpur,Maharashtra,West,2024-02-03,Gold,4,22,100584
+C0151,Customer 151,Male,32,Chennai,Tamil Nadu,South,2024-12-14,Platinum,2,28,15652
+C0152,Customer 152,Female,60,Bengaluru,Karnataka,South,2024-03-16,Platinum,1,26,63960
+C0153,Customer 153,Female,50,Ahmedabad,Gujarat,West,2024-02-01,Platinum,3,28,30100
+C0154,Customer 154,Male,52,Bengaluru,Karnataka,South,2024-01-23,None,1,2,6936
+C0155,Customer 155,Female,46,Ahmedabad,Gujarat,West,2024-02-03,Gold,1,22,94578
+C0156,Customer 156,Male,31,Nagpur,Maharashtra,West,2024-02-05,Platinum,5,29,121655
+C0157,Customer 157,Male,56,Bengaluru,Karnataka,South,2025-01-03,Silver,2,12,25956
+C0158,Customer 158,Female,52,Bengaluru,Karnataka,South,2024-12-01,Gold,2,18,80118
+C0159,Customer 159,Female,31,Chennai,Tamil Nadu,South,2025-02-06,Silver,1,6,29790
+C0160,Customer 160,Female,22,Nagpur,Maharashtra,West,2023-04-30,Silver,4,14,57176
+C0161,Customer 161,Male,51,Ahmedabad,Gujarat,West,2024-12-07,Gold,3,23,65642
+C0162,Customer 162,Female,48,Nagpur,Maharashtra,West,2024-10-10,Gold,3,15,40650
+C0163,Customer 163,Female,57,Delhi,Delhi,North,2023-06-19,Gold,2,23,114333
+C0164,Customer 164,Female,32,Ahmedabad,Gujarat,West,2024-03-15,Gold,1,18,41310
+C0165,Customer 165,Female,28,Bengaluru,Karnataka,South,2025-03-05,Silver,1,8,33656
+C0166,Customer 166,Female,22,Chennai,Tamil Nadu,South,2024-01-18,Gold,5,18,39168
+C0167,Customer 167,Male,31,Delhi,Delhi,North,2024-10-26,Silver,1,5,21280
+C0168,Customer 168,Male,22,Ahmedabad,Gujarat,West,2024-12-03,Platinum,1,29,79576
+C0169,Customer 169,Female,38,Nagpur,Maharashtra,West,2023-07-02,Platinum,5,29,62785
+C0170,Customer 170,Female,45,Chennai,Tamil Nadu,South,2024-08-03,Silver,1,12,41928
+C0171,Customer 171,Male,29,Bengaluru,Karnataka,South,2023-05-23,Gold,2,20,28180
+C0172,Customer 172,Male,38,Nagpur,Maharashtra,West,2024-07-27,Silver,2,8,4648
+C0173,Customer 173,Female,33,Nagpur,Maharashtra,West,2024-01-23,None,3,3,10263
+C0174,Customer 174,Female,47,Nagpur,Maharashtra,West,2023-09-23,Platinum,4,25,21450
+C0175,Customer 175,Male,18,Nagpur,Maharashtra,West,2024-06-28,Gold,2,15,56115
+C0176,Customer 176,Female,50,Bengaluru,Karnataka,South,2024-01-15,Gold,4,22,11902
+C0177,Customer 177,Female,23,Bengaluru,Karnataka,South,2024-05-27,None,5,3,10284
+C0178,Customer 178,Male,21,Delhi,Delhi,North,2023-04-22,Silver,5,9,41391
+C0179,Customer 179,Female,43,Chennai,Tamil Nadu,South,2023-06-04,Silver,3,6,29736
+C0180,Customer 180,Female,44,Delhi,Delhi,North,2025-01-09,Silver,1,14,9324
+C0181,Customer 181,Male,36,Delhi,Delhi,North,2023-12-04,Platinum,4,28,58128
+C0182,Customer 182,Female,29,Bengaluru,Karnataka,South,2023-12-28,Gold,4,23,104328
+C0183,Customer 183,Male,41,Delhi,Delhi,North,2023-11-02,Silver,1,5,14625
+C0184,Customer 184,Female,57,Bengaluru,Karnataka,South,2024-08-12,Silver,5,6,4308
+C0185,Customer 185,Female,52,Delhi,Delhi,North,2024-10-04,Platinum,5,29,94743
+C0186,Customer 186,Male,50,Bengaluru,Karnataka,South,2024-07-10,Platinum,1,28,74424
+C0187,Customer 187,Female,59,Ahmedabad,Gujarat,West,2024-12-27,Gold,3,22,91300
+C0188,Customer 188,Female,34,Chennai,Tamil Nadu,South,2024-01-13,Silver,4,12,18744
+C0189,Customer 189,Male,44,Ahmedabad,Gujarat,West,2023-07-29,Silver,4,13,38896
+C0190,Customer 190,Male,45,Nagpur,Maharashtra,West,2024-04-20,Gold,3,16,60720
+C0191,Customer 191,Female,59,Ahmedabad,Gujarat,West,2025-03-10,Silver,2,12,53520
+C0192,Customer 192,Female,52,Ahmedabad,Gujarat,West,2023-10-01,Gold,4,19,12559
+C0193,Customer 193,Female,44,Nagpur,Maharashtra,West,2024-05-09,Gold,3,15,49425
+C0194,Customer 194,Female,55,Nagpur,Maharashtra,West,2024-09-20,Gold,3,15,36525
+C0195,Customer 195,Female,30,Chennai,Tamil Nadu,South,2023-09-09,Silver,2,11,42713
+C0196,Customer 196,Female,30,Bengaluru,Karnataka,South,2024-12-12,Platinum,3,26,82784
+C0197,Customer 197,Male,28,Chennai,Tamil Nadu,South,2023-02-15,Gold,4,16,57072
+C0198,Customer 198,Female,26,Bengaluru,Karnataka,South,2024-08-23,Platinum,4,25,55450
+C0199,Customer 199,Female,26,Delhi,Delhi,North,2024-05-03,Platinum,5,25,59350
+C0200,Customer 200,Female,48,Chennai,Tamil Nadu,South,2023-09-17,Platinum,4,28,37688
+C0201,Customer 201,Male,49,Delhi,Delhi,North,2024-11-28,Gold,5,22,24706
+C0202,Customer 202,Male,26,Nagpur,Maharashtra,West,2024-10-17,Gold,2,18,69876
+C0203,Customer 203,Female,28,Chennai,Tamil Nadu,South,2024-03-12,Silver,2,11,14058
+C0204,Customer 204,Male,30,Chennai,Tamil Nadu,South,2023-07-11,Silver,3,11,40139
+C0205,Customer 205,Male,59,Ahmedabad,Gujarat,West,2024-01-21,Silver,3,9,13410
+C0206,Customer 206,Female,22,Nagpur,Maharashtra,West,2023-04-19,Platinum,1,28,108360
+C0207,Customer 207,Male,38,Delhi,Delhi,North,2023-04-17,None,2,1,3802
+C0208,Customer 208,Female,51,Delhi,Delhi,North,2024-02-01,Gold,2,17,26061
+C0209,Customer 209,Female,23,Ahmedabad,Gujarat,West,2024-01-25,Gold,1,20,37120
+C0210,Customer 210,Male,30,Bengaluru,Karnataka,South,2023-03-13,Gold,4,16,43440
+C0211,Customer 211,Female,48,Chennai,Tamil Nadu,South,2023-10-03,Gold,2,15,24870
+C0212,Customer 212,Female,26,Bengaluru,Karnataka,South,2023-06-03,Silver,4,13,40911
+C0213,Customer 213,Female,43,Bengaluru,Karnataka,South,2023-05-07,None,2,3,1569
+C0214,Customer 214,Male,24,Bengaluru,Karnataka,South,2023-05-05,Gold,1,19,59090
+C0215,Customer 215,Female,50,Ahmedabad,Gujarat,West,2024-06-26,Platinum,4,25,59925
+C0216,Customer 216,Male,42,Ahmedabad,Gujarat,West,2024-05-03,Silver,5,14,36708
+C0217,Customer 217,Female,34,Nagpur,Maharashtra,West,2024-01-21,Silver,2,10,43510
+C0218,Customer 218,Male,54,Chennai,Tamil Nadu,South,2023-01-17,Silver,2,9,25542
+C0219,Customer 219,Female,26,Bengaluru,Karnataka,South,2024-04-20,None,1,3,11769
+C0220,Customer 220,Female,44,Delhi,Delhi,North,2024-11-30,Silver,5,7,3563
+C0221,Customer 221,Female,28,Nagpur,Maharashtra,West,2024-04-11,Platinum,5,26,70252
+C0222,Customer 222,Male,57,Chennai,Tamil Nadu,South,2024-10-01,Gold,5,19,12787
+C0223,Customer 223,Female,49,Chennai,Tamil Nadu,South,2023-11-06,Gold,5,17,68357
+C0224,Customer 224,Male,51,Ahmedabad,Gujarat,West,2023-11-07,Silver,3,9,17496
+C0225,Customer 225,Female,57,Nagpur,Maharashtra,West,2024-12-18,Gold,1,21,54138
+C0226,Customer 226,Female,57,Nagpur,Maharashtra,West,2023-05-03,Platinum,1,27,115560
+C0227,Customer 227,Female,19,Delhi,Delhi,North,2023-11-13,Silver,3,13,31343
+C0228,Customer 228,Male,48,Bengaluru,Karnataka,South,2024-09-15,Platinum,2,27,64584
+C0229,Customer 229,Male,59,Chennai,Tamil Nadu,South,2023-03-23,None,1,3,7617
+C0230,Customer 230,Female,54,Nagpur,Maharashtra,West,2024-03-09,Silver,2,8,29600
+C0231,Customer 231,Male,34,Delhi,Delhi,North,2023-11-24,Silver,2,9,4878
+C0232,Customer 232,Male,53,Delhi,Delhi,North,2023-12-21,Gold,3,17,55896
+C0233,Customer 233,Female,56,Ahmedabad,Gujarat,West,2024-09-27,Platinum,1,30,129120
+C0234,Customer 234,Female,42,Chennai,Tamil Nadu,South,2023-02-13,Platinum,3,25,36475
+C0235,Customer 235,Female,56,Ahmedabad,Gujarat,West,2024-03-19,Silver,2,10,11070
+C0236,Customer 236,Female,41,Nagpur,Maharashtra,West,2023-07-29,Platinum,3,26,80106
+C0237,Customer 237,Male,39,Nagpur,Maharashtra,West,2024-03-25,None,4,4,12676
+C0238,Customer 238,Male,60,Nagpur,Maharashtra,West,2025-02-24,Gold,1,17,13957
+C0239,Customer 239,Male,30,Chennai,Tamil Nadu,South,2024-12-01,Gold,3,22,75020
+C0240,Customer 240,Male,49,Delhi,Delhi,North,2024-02-22,Platinum,1,28,60956
+C0241,Customer 241,Male,26,Nagpur,Maharashtra,West,2024-08-02,Gold,2,23,65205
+C0242,Customer 242,Female,56,Ahmedabad,Gujarat,West,2024-04-18,Gold,2,19,67526
+C0243,Customer 243,Female,56,Chennai,Tamil Nadu,South,2024-07-13,Silver,5,12,59652
+C0244,Customer 244,Male,49,Nagpur,Maharashtra,West,2025-03-11,None,4,3,8997
+C0245,Customer 245,Male,58,Delhi,Delhi,North,2024-04-10,Gold,1,23,101108
+C0246,Customer 246,Female,26,Bengaluru,Karnataka,South,2024-10-16,Gold,5,15,8370
+C0247,Customer 247,Female,27,Nagpur,Maharashtra,West,2024-08-03,None,4,4,16392
+C0248,Customer 248,Male,41,Nagpur,Maharashtra,West,2023-05-15,Platinum,5,29,15196
+C0249,Customer 249,Male,47,Delhi,Delhi,North,2024-04-04,Gold,5,16,40208
+C0250,Customer 250,Male,38,Chennai,Tamil Nadu,South,2023-09-11,Gold,3,20,54340
+C0251,Customer 251,Female,23,Ahmedabad,Gujarat,West,2024-04-03,Silver,2,13,27560
+C0252,Customer 252,Male,46,Delhi,Delhi,North,2025-01-22,Silver,2,6,23106
+C0253,Customer 253,Male,54,Bengaluru,Karnataka,South,2024-11-07,Gold,3,15,36780
+C0254,Customer 254,Male,52,Ahmedabad,Gujarat,West,2023-02-16,Gold,4,18,63054
+C0255,Customer 255,Male,32,Delhi,Delhi,North,2024-10-16,Silver,1,6,3294
+C0256,Customer 256,Female,45,Chennai,Tamil Nadu,South,2024-12-06,Silver,1,14,45794
+C0257,Customer 257,Male,49,Delhi,Delhi,North,2025-02-06,Platinum,1,29,61277
+C0258,Customer 258,Female,51,Delhi,Delhi,North,2023-09-21,Gold,5,18,53064
+C0259,Customer 259,Male,46,Chennai,Tamil Nadu,South,2024-07-16,Platinum,3,29,26390
+C0260,Customer 260,Female,48,Ahmedabad,Gujarat,West,2023-10-16,Platinum,3,29,48517
+C0261,Customer 261,Female,29,Delhi,Delhi,North,2025-03-11,Platinum,2,30,89520
+C0262,Customer 262,Female,30,Ahmedabad,Gujarat,West,2024-05-25,Gold,2,20,84600
+C0263,Customer 263,Male,51,Delhi,Delhi,North,2024-10-07,Gold,5,19,60591
+C0264,Customer 264,Male,34,Nagpur,Maharashtra,West,2024-03-02,None,5,2,4128
+C0265,Customer 265,Male,26,Chennai,Tamil Nadu,South,2023-12-26,Gold,1,15,69630
+C0266,Customer 266,Female,57,Nagpur,Maharashtra,West,2024-06-15,Platinum,4,30,40500
+C0267,Customer 267,Female,32,Delhi,Delhi,North,2024-08-25,Silver,5,13,12519
+C0268,Customer 268,Female,39,Delhi,Delhi,North,2023-01-13,Platinum,1,28,44548
+C0269,Customer 269,Male,22,Bengaluru,Karnataka,South,2024-07-02,Silver,4,5,23510
+C0270,Customer 270,Female,26,Chennai,Tamil Nadu,South,2024-12-12,Silver,2,7,33425
+C0271,Customer 271,Male,58,Nagpur,Maharashtra,West,2023-06-22,Gold,2,24,51120
+C0272,Customer 272,Female,18,Nagpur,Maharashtra,West,2023-02-19,Silver,1,10,43630
+C0273,Customer 273,Male,52,Chennai,Tamil Nadu,South,2023-10-16,Platinum,1,27,15417
+C0274,Customer 274,Male,57,Nagpur,Maharashtra,West,2023-11-17,Gold,2,20,90580
+C0275,Customer 275,Female,19,Bengaluru,Karnataka,South,2024-01-04,Silver,1,12,48912
+C0276,Customer 276,Male,52,Nagpur,Maharashtra,West,2024-03-21,Silver,1,10,45610
+C0277,Customer 277,Male,45,Delhi,Delhi,North,2024-01-01,Platinum,3,28,136780
+C0278,Customer 278,Male,35,Bengaluru,Karnataka,South,2024-10-22,Silver,1,13,33917
+C0279,Customer 279,Male,47,Bengaluru,Karnataka,South,2023-08-15,Platinum,4,28,77532
+C0280,Customer 280,Male,49,Nagpur,Maharashtra,West,2024-06-21,Silver,5,14,52430
+C0281,Customer 281,Male,41,Nagpur,Maharashtra,West,2024-06-12,None,1,2,3442
+C0282,Customer 282,Female,52,Delhi,Delhi,North,2024-12-29,Platinum,2,28,65380
+C0283,Customer 283,Female,47,Delhi,Delhi,North,2024-12-19,Platinum,3,27,121473
+C0284,Customer 284,Female,55,Ahmedabad,Gujarat,West,2023-01-24,None,2,4,5404
+C0285,Customer 285,Female,57,Delhi,Delhi,North,2023-12-11,Silver,3,13,53989
+C0286,Customer 286,Female,40,Bengaluru,Karnataka,South,2024-05-18,Silver,1,14,63238
+C0287,Customer 287,Male,41,Chennai,Tamil Nadu,South,2024-01-09,Gold,5,19,65151
+C0288,Customer 288,Female,52,Delhi,Delhi,North,2024-10-03,None,5,2,4702
+C0289,Customer 289,Female,45,Chennai,Tamil Nadu,South,2023-07-13,None,1,2,8052
+C0290,Customer 290,Male,30,Chennai,Tamil Nadu,South,2023-07-17,Gold,1,18,30852
+C0291,Customer 291,Male,48,Bengaluru,Karnataka,South,2024-10-17,Gold,1,22,73458
+C0292,Customer 292,Male,33,Bengaluru,Karnataka,South,2023-03-17,Gold,4,24,80112
+C0293,Customer 293,Female,56,Nagpur,Maharashtra,West,2024-10-25,Silver,2,13,12584
+C0294,Customer 294,Male,31,Delhi,Delhi,North,2024-04-02,None,1,3,2301
+C0295,Customer 295,Female,36,Ahmedabad,Gujarat,West,2024-09-30,Gold,3,19,37715
+C0296,Customer 296,Male,27,Chennai,Tamil Nadu,South,2024-02-15,Gold,1,17,60282
+C0297,Customer 297,Female,56,Delhi,Delhi,North,2023-11-22,Gold,4,19,67716
+C0298,Customer 298,Male,21,Delhi,Delhi,North,2023-07-02,Gold,5,19,62453
+C0299,Customer 299,Female,54,Bengaluru,Karnataka,South,2024-08-23,Silver,1,5,9480
+C0300,Customer 300,Female,55,Delhi,Delhi,North,2023-06-21,Silver,5,5,15610
+C0301,Customer 301,Female,33,Chennai,Tamil Nadu,South,2024-06-06,Platinum,1,25,70675
+C0302,Customer 302,Female,19,Bengaluru,Karnataka,South,2024-12-11,Gold,3,24,100992
+C0303,Customer 303,Male,33,Ahmedabad,Gujarat,West,2025-02-18,Silver,1,12,59088
+C0304,Customer 304,Female,30,Bengaluru,Karnataka,South,2023-02-22,Platinum,3,26,24024
+C0305,Customer 305,Female,31,Nagpur,Maharashtra,West,2023-07-05,Gold,1,19,77311
+C0306,Customer 306,Female,56,Nagpur,Maharashtra,West,2024-04-14,Gold,3,24,59088
+C0307,Customer 307,Female,23,Ahmedabad,Gujarat,West,2024-02-10,Gold,3,20,72740
+C0308,Customer 308,Male,57,Nagpur,Maharashtra,West,2025-02-24,Gold,3,22,85008
+C0309,Customer 309,Female,29,Nagpur,Maharashtra,West,2024-10-15,Silver,3,7,18368
+C0310,Customer 310,Male,40,Ahmedabad,Gujarat,West,2025-01-13,Platinum,1,26,34008
+C0311,Customer 311,Male,34,Chennai,Tamil Nadu,South,2023-11-04,None,5,4,13608
+C0312,Customer 312,Female,26,Ahmedabad,Gujarat,West,2025-03-04,Gold,3,20,31340
+C0313,Customer 313,Female,34,Chennai,Tamil Nadu,South,2024-11-13,Gold,2,16,38768
+C0314,Customer 314,Male,52,Ahmedabad,Gujarat,West,2024-07-09,Platinum,3,25,44275
+C0315,Customer 315,Female,26,Nagpur,Maharashtra,West,2023-08-05,Platinum,2,25,77300
+C0316,Customer 316,Male,58,Delhi,Delhi,North,2023-09-08,Silver,5,11,19228
+C0317,Customer 317,Male,39,Bengaluru,Karnataka,South,2024-02-08,Gold,5,18,40608
+C0318,Customer 318,Female,34,Bengaluru,Karnataka,South,2025-02-25,Gold,1,20,80680
+C0319,Customer 319,Male,45,Ahmedabad,Gujarat,West,2024-01-05,Silver,4,9,25956
+C0320,Customer 320,Male,34,Ahmedabad,Gujarat,West,2023-03-05,Gold,5,21,81627
+C0321,Customer 321,Male,22,Nagpur,Maharashtra,West,2025-02-14,Gold,4,23,84479
+C0322,Customer 322,Female,57,Nagpur,Maharashtra,West,2025-02-03,Platinum,5,28,18172
+C0323,Customer 323,Male,38,Ahmedabad,Gujarat,West,2024-10-06,Gold,4,19,32338
+C0324,Customer 324,Female,60,Nagpur,Maharashtra,West,2023-01-30,Platinum,1,26,21606
+C0325,Customer 325,Male,27,Ahmedabad,Gujarat,West,2023-07-02,Gold,1,18,82080
+C0326,Customer 326,Male,47,Bengaluru,Karnataka,South,2024-08-21,Gold,4,17,20808
+C0327,Customer 327,Male,36,Ahmedabad,Gujarat,West,2023-11-25,Platinum,1,27,24732
+C0328,Customer 328,Female,32,Ahmedabad,Gujarat,West,2023-11-01,Platinum,3,27,37692
+C0329,Customer 329,Female,52,Nagpur,Maharashtra,West,2023-02-08,Platinum,1,30,101790
+C0330,Customer 330,Male,53,Bengaluru,Karnataka,South,2024-03-18,Silver,3,10,49150
+C0331,Customer 331,Male,30,Bengaluru,Karnataka,South,2025-01-24,Platinum,1,27,66825
+C0332,Customer 332,Female,47,Chennai,Tamil Nadu,South,2024-12-18,None,3,4,9640
+C0333,Customer 333,Female,41,Delhi,Delhi,North,2024-07-27,Platinum,1,26,95394
+C0334,Customer 334,Male,45,Ahmedabad,Gujarat,West,2023-07-02,Gold,3,17,23290
+C0335,Customer 335,Female,35,Chennai,Tamil Nadu,South,2023-05-22,Gold,4,17,71859
+C0336,Customer 336,Female,22,Chennai,Tamil Nadu,South,2024-10-10,None,3,1,4642
+C0337,Customer 337,Female,37,Ahmedabad,Gujarat,West,2024-04-06,Platinum,5,27,36504
+C0338,Customer 338,Female,51,Delhi,Delhi,North,2023-07-21,None,4,4,12132
+C0339,Customer 339,Male,29,Nagpur,Maharashtra,West,2023-12-18,Silver,5,7,15253
+C0340,Customer 340,Female,59,Delhi,Delhi,North,2023-06-13,Gold,1,22,62260
+C0341,Customer 341,Male,48,Chennai,Tamil Nadu,South,2023-09-18,Gold,2,20,79840
+C0342,Customer 342,Female,18,Chennai,Tamil Nadu,South,2023-07-16,None,1,3,14037
+C0343,Customer 343,Female,23,Nagpur,Maharashtra,West,2025-02-22,Silver,2,14,36764
+C0344,Customer 344,Male,27,Ahmedabad,Gujarat,West,2024-07-09,Gold,2,18,51678
+C0345,Customer 345,Female,43,Delhi,Delhi,North,2023-05-16,Silver,2,8,22080
+C0346,Customer 346,Female,40,Nagpur,Maharashtra,West,2023-08-12,Gold,5,16,58208
+C0347,Customer 347,Female,41,Nagpur,Maharashtra,West,2023-05-04,Silver,3,11,32274
+C0348,Customer 348,Female,58,Bengaluru,Karnataka,South,2023-12-24,Gold,4,22,91608
+C0349,Customer 349,Male,23,Bengaluru,Karnataka,South,2024-06-13,None,1,1,1266
+C0350,Customer 350,Female,31,Delhi,Delhi,North,2023-10-17,Silver,5,12,53568
+C0351,Customer 351,Female,42,Ahmedabad,Gujarat,West,2024-10-30,Gold,3,15,62145
+C0352,Customer 352,Female,34,Ahmedabad,Gujarat,West,2024-07-01,Silver,4,7,31766
+C0353,Customer 353,Female,59,Ahmedabad,Gujarat,West,2023-04-12,Gold,4,24,68976
+C0354,Customer 354,Female,27,Delhi,Delhi,North,2023-04-15,Silver,2,6,3420
+C0355,Customer 355,Female,34,Delhi,Delhi,North,2024-06-27,Gold,1,22,22748
+C0356,Customer 356,Female,19,Chennai,Tamil Nadu,South,2024-06-12,Silver,4,5,18725
+C0357,Customer 357,Male,51,Chennai,Tamil Nadu,South,2024-02-29,Gold,1,17,14314
+C0358,Customer 358,Female,47,Bengaluru,Karnataka,South,2024-08-17,None,5,1,1892
+C0359,Customer 359,Male,42,Chennai,Tamil Nadu,South,2024-10-31,Platinum,3,29,126759
+C0360,Customer 360,Female,57,Ahmedabad,Gujarat,West,2023-11-03,Silver,3,14,30086
+C0361,Customer 361,Female,31,Delhi,Delhi,North,2023-12-24,Platinum,1,27,65610
+C0362,Customer 362,Female,50,Chennai,Tamil Nadu,South,2024-01-27,Gold,1,22,95876
+C0363,Customer 363,Female,56,Nagpur,Maharashtra,West,2023-05-18,Platinum,5,28,118104
+C0364,Customer 364,Female,55,Nagpur,Maharashtra,West,2023-07-04,Silver,1,9,38340
+C0365,Customer 365,Male,41,Delhi,Delhi,North,2023-02-11,Platinum,3,26,30394
+C0366,Customer 366,Female,58,Chennai,Tamil Nadu,South,2023-07-28,Platinum,2,29,30160
+C0367,Customer 367,Male,32,Delhi,Delhi,North,2024-06-03,Silver,4,13,52182
+C0368,Customer 368,Male,38,Delhi,Delhi,North,2023-07-03,Gold,2,18,50922
+C0369,Customer 369,Male,53,Ahmedabad,Gujarat,West,2024-10-18,Silver,4,5,5955
+C0370,Customer 370,Male,55,Bengaluru,Karnataka,South,2023-09-18,Platinum,1,25,19975
+C0371,Customer 371,Female,55,Ahmedabad,Gujarat,West,2024-03-18,Silver,1,6,16956
+C0372,Customer 372,Male,30,Chennai,Tamil Nadu,South,2024-01-17,None,4,2,1072
+C0373,Customer 373,Male,39,Delhi,Delhi,North,2024-08-20,Platinum,1,27,37422
+C0374,Customer 374,Male,34,Chennai,Tamil Nadu,South,2024-07-19,Silver,5,9,5850
+C0375,Customer 375,Male,25,Nagpur,Maharashtra,West,2023-10-01,Silver,4,10,34840
+C0376,Customer 376,Male,38,Delhi,Delhi,North,2023-11-25,Platinum,3,25,77800
+C0377,Customer 377,Male,54,Delhi,Delhi,North,2024-02-29,Platinum,3,27,128466
+C0378,Customer 378,Male,37,Nagpur,Maharashtra,West,2024-09-16,Platinum,4,27,27756
+C0379,Customer 379,Female,28,Ahmedabad,Gujarat,West,2023-01-02,None,2,1,1964
+C0380,Customer 380,Female,59,Delhi,Delhi,North,2023-09-21,Gold,1,21,56931
+C0381,Customer 381,Male,47,Bengaluru,Karnataka,South,2023-07-06,Gold,2,15,74400
+C0382,Customer 382,Male,26,Ahmedabad,Gujarat,West,2023-08-06,Silver,3,5,21555
+C0383,Customer 383,Female,43,Ahmedabad,Gujarat,West,2024-11-14,Silver,4,5,12955
+C0384,Customer 384,Female,50,Ahmedabad,Gujarat,West,2023-11-13,Silver,4,7,15015
+C0385,Customer 385,Female,39,Nagpur,Maharashtra,West,2024-10-03,Platinum,5,26,75322
+C0386,Customer 386,Male,35,Bengaluru,Karnataka,South,2024-10-29,Silver,1,8,37944
+C0387,Customer 387,Female,51,Ahmedabad,Gujarat,West,2024-07-19,Silver,4,11,22363
+C0388,Customer 388,Male,21,Ahmedabad,Gujarat,West,2023-11-07,None,3,2,1728
+C0389,Customer 389,Male,41,Bengaluru,Karnataka,South,2023-06-15,Gold,1,18,86238
+C0390,Customer 390,Male,45,Ahmedabad,Gujarat,West,2023-10-29,Silver,1,14,46354
+C0391,Customer 391,Female,52,Ahmedabad,Gujarat,West,2024-09-23,Silver,1,9,6714
+C0392,Customer 392,Male,21,Delhi,Delhi,North,2023-03-22,Platinum,4,26,93288
+C0393,Customer 393,Male,26,Delhi,Delhi,North,2023-07-14,Gold,1,20,43040
+C0394,Customer 394,Female,46,Nagpur,Maharashtra,West,2024-05-23,Gold,2,15,46545
+C0395,Customer 395,Female,20,Chennai,Tamil Nadu,South,2023-12-21,Platinum,2,28,59024
+C0396,Customer 396,Female,39,Chennai,Tamil Nadu,South,2024-06-16,Platinum,3,29,112201
+C0397,Customer 397,Male,52,Chennai,Tamil Nadu,South,2024-02-21,Gold,3,19,26524
+C0398,Customer 398,Female,55,Bengaluru,Karnataka,South,2024-07-30,Platinum,2,25,54425
+C0399,Customer 399,Male,28,Chennai,Tamil Nadu,South,2024-06-16,Platinum,1,30,120030
+C0400,Customer 400,Female,59,Bengaluru,Karnataka,South,2023-05-23,None,4,3,5067
+C0401,Customer 401,Male,31,Bengaluru,Karnataka,South,2023-04-12,None,5,4,14716
+C0402,Customer 402,Male,43,Bengaluru,Karnataka,South,2023-03-09,Gold,1,15,21780
+C0403,Customer 403,Male,54,Delhi,Delhi,North,2025-01-11,Silver,3,12,16644
+C0404,Customer 404,Male,25,Chennai,Tamil Nadu,South,2023-12-30,Platinum,5,25,112350
+C0405,Customer 405,Female,59,Chennai,Tamil Nadu,South,2024-04-25,Silver,3,5,7040
+C0406,Customer 406,Female,58,Bengaluru,Karnataka,South,2024-10-04,Platinum,3,28,105196
+C0407,Customer 407,Female,49,Chennai,Tamil Nadu,South,2023-03-29,Gold,3,16,42656
+C0408,Customer 408,Male,40,Bengaluru,Karnataka,South,2024-06-03,None,5,3,4758
+C0409,Customer 409,Female,43,Chennai,Tamil Nadu,South,2024-04-04,Gold,3,15,61050
+C0410,Customer 410,Female,60,Chennai,Tamil Nadu,South,2025-03-05,None,5,2,8348
+C0411,Customer 411,Male,55,Delhi,Delhi,North,2024-10-19,None,4,1,4018
+C0412,Customer 412,Male,40,Nagpur,Maharashtra,West,2024-02-19,None,5,4,9368
+C0413,Customer 413,Female,19,Bengaluru,Karnataka,South,2023-08-03,None,4,3,13998
+C0414,Customer 414,Male,60,Ahmedabad,Gujarat,West,2023-03-27,Silver,3,9,29214
+C0415,Customer 415,Female,21,Nagpur,Maharashtra,West,2023-03-20,None,2,3,5934
+C0416,Customer 416,Male,34,Delhi,Delhi,North,2023-01-27,Platinum,4,26,90506
+C0417,Customer 417,Female,48,Delhi,Delhi,North,2023-08-24,Silver,1,7,7455
+C0418,Customer 418,Female,36,Nagpur,Maharashtra,West,2023-08-01,Platinum,4,30,117900
+C0419,Customer 419,Male,50,Delhi,Delhi,North,2025-02-03,Platinum,5,29,92278
+C0420,Customer 420,Male,52,Nagpur,Maharashtra,West,2024-03-07,Silver,2,5,7640
+C0421,Customer 421,Female,30,Chennai,Tamil Nadu,South,2024-04-22,None,3,3,9270
+C0422,Customer 422,Female,32,Chennai,Tamil Nadu,South,2023-12-14,Gold,3,21,79044
+C0423,Customer 423,Female,45,Ahmedabad,Gujarat,West,2024-12-20,Platinum,5,30,132330
+C0424,Customer 424,Female,30,Delhi,Delhi,North,2024-08-15,Gold,1,19,30970
+C0425,Customer 425,Female,20,Nagpur,Maharashtra,West,2023-09-11,Gold,5,24,88848
+C0426,Customer 426,Female,58,Delhi,Delhi,North,2024-02-04,Silver,1,12,49164
+C0427,Customer 427,Male,38,Bengaluru,Karnataka,South,2023-12-09,Gold,5,22,36212
+C0428,Customer 428,Female,34,Nagpur,Maharashtra,West,2024-11-30,Silver,5,12,56952
+C0429,Customer 429,Male,51,Ahmedabad,Gujarat,West,2024-06-25,None,3,4,5364
+C0430,Customer 430,Female,60,Ahmedabad,Gujarat,West,2024-12-09,Gold,2,20,91880
+C0431,Customer 431,Female,20,Delhi,Delhi,North,2023-09-01,None,5,4,6576
+C0432,Customer 432,Female,31,Delhi,Delhi,North,2023-01-13,Platinum,2,27,70335
+C0433,Customer 433,Female,53,Bengaluru,Karnataka,South,2024-04-22,Gold,3,18,87822
+C0434,Customer 434,Female,58,Nagpur,Maharashtra,West,2023-10-04,Silver,2,8,38840
+C0435,Customer 435,Male,44,Delhi,Delhi,North,2024-05-10,Gold,1,24,89136
+C0436,Customer 436,Male,39,Delhi,Delhi,North,2024-08-08,Silver,4,8,22536
+C0437,Customer 437,Female,53,Delhi,Delhi,North,2023-02-19,Silver,5,6,18468
+C0438,Customer 438,Female,49,Bengaluru,Karnataka,South,2023-10-11,Gold,1,22,13574
+C0439,Customer 439,Male,43,Ahmedabad,Gujarat,West,2024-06-10,Silver,2,9,30654
+C0440,Customer 440,Male,32,Delhi,Delhi,North,2024-10-05,Silver,4,5,17635
+C0441,Customer 441,Male,29,Ahmedabad,Gujarat,West,2023-10-15,Silver,2,13,57200
+C0442,Customer 442,Female,58,Chennai,Tamil Nadu,South,2024-03-23,Gold,3,23,48231
+C0443,Customer 443,Female,21,Ahmedabad,Gujarat,West,2024-12-17,Silver,3,5,17715
+C0444,Customer 444,Male,25,Bengaluru,Karnataka,South,2023-02-03,None,3,1,3876
+C0445,Customer 445,Male,28,Bengaluru,Karnataka,South,2024-08-12,Gold,3,16,69792
+C0446,Customer 446,Female,40,Nagpur,Maharashtra,West,2023-11-24,Gold,1,15,35865
+C0447,Customer 447,Female,41,Chennai,Tamil Nadu,South,2023-07-02,Gold,4,22,33022
+C0448,Customer 448,Male,38,Nagpur,Maharashtra,West,2023-11-04,Silver,3,12,8964
+C0449,Customer 449,Female,50,Nagpur,Maharashtra,West,2024-05-18,Platinum,2,25,31800
+C0450,Customer 450,Male,48,Nagpur,Maharashtra,West,2024-11-30,Gold,2,15,22575
+C0451,Customer 451,Female,25,Delhi,Delhi,North,2024-11-27,Gold,5,19,19741
+C0452,Customer 452,Female,26,Nagpur,Maharashtra,West,2025-03-11,Platinum,1,28,108556
+C0453,Customer 453,Male,27,Nagpur,Maharashtra,West,2025-01-26,None,4,1,4868
+C0454,Customer 454,Male,24,Nagpur,Maharashtra,West,2023-11-18,Gold,3,22,19074
+C0455,Customer 455,Male,56,Chennai,Tamil Nadu,South,2024-11-08,Silver,3,8,13608
+C0456,Customer 456,Male,59,Ahmedabad,Gujarat,West,2023-04-13,Silver,1,12,14340
+C0457,Customer 457,Female,36,Ahmedabad,Gujarat,West,2023-02-02,Gold,3,20,15640
+C0458,Customer 458,Male,56,Ahmedabad,Gujarat,West,2024-02-11,Platinum,5,27,110565
+C0459,Customer 459,Male,20,Chennai,Tamil Nadu,South,2024-04-26,Silver,5,5,24645
+C0460,Customer 460,Female,38,Ahmedabad,Gujarat,West,2025-03-10,Silver,1,13,19123
+C0461,Customer 461,Female,47,Delhi,Delhi,North,2023-08-25,Gold,3,16,71200
+C0462,Customer 462,Female,33,Nagpur,Maharashtra,West,2024-06-27,None,3,1,4833
+C0463,Customer 463,Female,35,Chennai,Tamil Nadu,South,2023-08-04,Silver,3,11,38654
+C0464,Customer 464,Male,51,Ahmedabad,Gujarat,West,2024-09-27,Silver,4,7,12901
+C0465,Customer 465,Female,50,Delhi,Delhi,North,2024-07-27,None,1,4,8880
+C0466,Customer 466,Male,46,Bengaluru,Karnataka,South,2023-01-01,Gold,5,16,33136
+C0467,Customer 467,Male,39,Chennai,Tamil Nadu,South,2024-12-14,Gold,2,16,39488
+C0468,Customer 468,Female,42,Ahmedabad,Gujarat,West,2023-12-17,Silver,2,5,10855
+C0469,Customer 469,Male,41,Nagpur,Maharashtra,West,2024-01-02,Silver,5,6,10068
+C0470,Customer 470,Male,51,Nagpur,Maharashtra,West,2024-02-05,None,1,4,15216
+C0471,Customer 471,Male,45,Chennai,Tamil Nadu,South,2023-11-07,Silver,5,7,9429
+C0472,Customer 472,Female,35,Nagpur,Maharashtra,West,2023-10-14,Platinum,4,27,39933
+C0473,Customer 473,Male,19,Nagpur,Maharashtra,West,2024-05-08,Gold,5,20,20180
+C0474,Customer 474,Male,40,Bengaluru,Karnataka,South,2024-09-12,Silver,3,14,7252
+C0475,Customer 475,Male,21,Ahmedabad,Gujarat,West,2024-11-01,Gold,5,19,17024
+C0476,Customer 476,Male,51,Bengaluru,Karnataka,South,2024-08-18,Platinum,1,26,101062
+C0477,Customer 477,Male,27,Chennai,Tamil Nadu,South,2024-11-29,None,2,2,5712
+C0478,Customer 478,Female,31,Bengaluru,Karnataka,South,2023-03-09,Platinum,1,28,20048
+C0479,Customer 479,Female,45,Delhi,Delhi,North,2023-03-12,Silver,5,5,3590
+C0480,Customer 480,Male,28,Ahmedabad,Gujarat,West,2023-04-04,Silver,1,12,7656
+C0481,Customer 481,Female,20,Chennai,Tamil Nadu,South,2023-10-06,Gold,4,23,55729
+C0482,Customer 482,Male,47,Ahmedabad,Gujarat,West,2023-08-09,Gold,1,15,27600
+C0483,Customer 483,Female,31,Delhi,Delhi,North,2024-01-02,None,2,4,2956
+C0484,Customer 484,Male,21,Delhi,Delhi,North,2023-04-27,Silver,2,6,22824
+C0485,Customer 485,Female,45,Delhi,Delhi,North,2024-12-19,Platinum,3,29,86072
+C0486,Customer 486,Male,41,Ahmedabad,Gujarat,West,2023-08-14,Platinum,5,28,111860
+C0487,Customer 487,Female,52,Bengaluru,Karnataka,South,2024-02-07,Platinum,5,25,99150
+C0488,Customer 488,Female,52,Bengaluru,Karnataka,South,2023-09-26,Gold,4,19,14554
+C0489,Customer 489,Male,44,Ahmedabad,Gujarat,West,2024-08-27,Silver,4,13,45409
+C0490,Customer 490,Male,50,Nagpur,Maharashtra,West,2023-07-30,Gold,5,24,55344
+C0491,Customer 491,Female,48,Ahmedabad,Gujarat,West,2024-04-15,Silver,2,7,22799
+C0492,Customer 492,Male,49,Nagpur,Maharashtra,West,2024-12-31,Silver,5,13,21255
+C0493,Customer 493,Female,46,Nagpur,Maharashtra,West,2025-01-18,Gold,4,15,31950
+C0494,Customer 494,Female,26,Delhi,Delhi,North,2024-09-17,Gold,2,18,39168
+C0495,Customer 495,Male,58,Ahmedabad,Gujarat,West,2024-07-21,Silver,3,5,7745
+C0496,Customer 496,Female,43,Delhi,Delhi,North,2024-06-05,Platinum,4,25,56025
+C0497,Customer 497,Male,40,Delhi,Delhi,North,2023-01-18,Gold,5,21,83055
+C0498,Customer 498,Female,26,Chennai,Tamil Nadu,South,2023-06-11,Platinum,3,28,95844
+C0499,Customer 499,Female,40,Ahmedabad,Gujarat,West,2023-03-01,Gold,3,15,49965
+C0500,Customer 500,Female,39,Chennai,Tamil Nadu,South,2023-04-12,Gold,4,17,18207

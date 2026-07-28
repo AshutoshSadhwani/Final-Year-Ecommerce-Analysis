@@ -1,0 +1,6 @@
+﻿event_id,event_name,event_type,start_date,end_date,holiday_flag
+1,Republic Day,Holiday,2025-01-01,2025-01-02,H
+2,Holi,Festival,2025-02-01,2025-02-02,F
+3,Diwali,Festival,2025-03-01,2025-03-02,F
+4,Christmas,Holiday,2025-04-01,2025-04-02,H
+5,New Year,Holiday,2025-05-01,2025-05-02,H
