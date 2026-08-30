@@ -2,95 +2,93 @@ package org.finalecommerceproject.analytics;
 
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
+import org.apache.spark.sql.expressions.Window;
+import org.apache.spark.sql.expressions.WindowSpec;
 
 import static org.apache.spark.sql.functions.*;
 
 public class ProductAnalytics {
 
     /*
-     * Department Wise Revenue
+     * Best-Selling Product According to Category
+     *
+     * Products:
+     * product_id, product_name, brand, department, category, price, rating
+     *
+     * Order_Items:
+     * order_item_id, order_id, product_id, quantity,
+     * selling_price, discount, final_price
      */
-    public static void departmentRevenue(Dataset<Row> orders){
 
-        System.out.println("\n========== DEPARTMENT REVENUE ==========");
+    public static void bestSellingProductByCategory(
+            Dataset<Row> products,
+            Dataset<Row> orderItems) {
 
-        orders.groupBy("department")
-                .agg(round(sum("total_amount"),2)
-                        .alias("Revenue"))
-                .orderBy(desc("Revenue"))
-                .show(false);
+        System.out.println("\n==============================================");
+        System.out.println("     BEST-SELLING PRODUCT BY CATEGORY");
+        System.out.println("==============================================");
+
+        // Join Products and Order_Items using product_id
+        Dataset<Row> productSales = products
+                .join(
+                        orderItems,
+                        products.col("product_id")
+                                .equalTo(orderItems.col("product_id")),
+                        "inner"
+                );
+
+//        System.out.println("\n========== PRODUCT JOIN DEBUG ==========");
+//
+//        System.out.println("Products count: " + products.count());
+//        System.out.println("Order Items count: " + orderItems.count());
+//        System.out.println("Joined count: " + productSales.count());
+//
+//        System.out.println("\nProducts product_id:");
+//        products.select("product_id").show(10, false);
+//
+//        System.out.println("\nOrder Items product_id:");
+//        orderItems.select("product_id").show(10, false);
+//
+//        System.out.println("\nJoined sample:");
+//        productSales.select(
+//                products.col("product_id"),
+//                products.col("product_name"),
+//                products.col("category"),
+//                orderItems.col("quantity")
+//        ).show(10, false);
+
+        // Calculate total quantity sold for each product
+        Dataset<Row> productQuantity = productSales
+                .groupBy(
+                        products.col("category"),
+                        products.col("product_id"),
+                        products.col("product_name")
+                )
+                .agg(
+                        sum(orderItems.col("quantity"))
+                                .alias("total_quantity_sold")
+                );
+
+        // Rank products within each category
+        WindowSpec categoryWindow = Window
+                .partitionBy("category")
+                .orderBy(
+                        col("total_quantity_sold").desc()
+                );
+
+        // Select the best-selling product from each category
+        Dataset<Row> bestSellingProducts = productQuantity
+                .withColumn(
+                        "rank",
+                        row_number().over(categoryWindow)
+                )
+                .filter(
+                        col("rank").equalTo(1)
+                )
+                .drop("rank")
+                .orderBy("category");
+
+        // Display result on console
+        bestSellingProducts.show(false);
     }
-
-    /*
-     * Category Wise Revenue
-     */
-    public static void categoryRevenue(Dataset<Row> orders){
-
-        System.out.println("\n========== CATEGORY REVENUE ==========");
-
-        orders.groupBy("category")
-                .agg(round(sum("total_amount"),2)
-                        .alias("Revenue"))
-                .orderBy(desc("Revenue"))
-                .show(false);
-    }
-
-    /*
-     * Brand Wise Revenue
-     */
-    public static void brandRevenue(Dataset<Row> orders){
-
-        System.out.println("\n========== BRAND REVENUE ==========");
-
-        orders.groupBy("brand")
-                .agg(round(sum("total_amount"),2)
-                        .alias("Revenue"))
-                .orderBy(desc("Revenue"))
-                .show(false);
-    }
-
-    /*
-     * Top 10 Selling Products
-     */
-    public static void topSellingProducts(Dataset<Row> orders){
-
-        System.out.println("\n========== TOP SELLING PRODUCTS ==========");
-
-        orders.groupBy("product_name")
-                .agg(sum("quantity")
-                        .alias("Quantity Sold"))
-                .orderBy(desc("Quantity Sold"))
-                .limit(10)
-                .show(false);
-    }
-
-    /*
-     * Lowest Selling Products
-     */
-    public static void leastSellingProducts(Dataset<Row> orders){
-
-        System.out.println("\n========== LOWEST SELLING PRODUCTS ==========");
-
-        orders.groupBy("product_name")
-                .agg(sum("quantity")
-                        .alias("Quantity Sold"))
-                .orderBy("Quantity Sold")
-                .limit(10)
-                .show(false);
-    }
-
-    /*
-     * Average Product Rating
-     */
-    public static void productRatings(Dataset<Row> orders){
-
-        System.out.println("\n========== PRODUCT RATINGS ==========");
-
-        orders.groupBy("product_name")
-                .agg(round(avg("rating"),2)
-                        .alias("Average Rating"))
-                .orderBy(desc("Average Rating"))
-                .show(false);
-    }
-
 }

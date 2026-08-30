@@ -2,6 +2,7 @@ package org.finalecommerceproject.etl;
 
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
+import org.apache.spark.sql.functions;
 
 import static org.apache.spark.sql.functions.*;
 
@@ -52,17 +53,7 @@ public class TransformJob {
                         upper(col("gender")))
 
                 .withColumn("state",
-                        upper(col("state")))
-                .withColumn(
-                        "loyalty_scheme",
-                        upper(col("loyalty_scheme"))
-                );
-        // when want to create new col as loyalty_flag
-//        customers = customers.withColumn(
-//                "loyalty_flag",
-//                when(col("loyalty_scheme").equalTo("Gold"), "YES")
-//                        .otherwise("NO")
-//        );
+                        upper(col("state")));
     }
 
 
@@ -77,22 +68,33 @@ public class TransformJob {
 
                 .na().drop()
 
-                // Convert order date into DateType
-                .withColumn("order_date",
-                        to_date(col("order_date"),
-                                "yyyy-MM-dd"))
+                .withColumn(
+                        "order_date",
+                        to_date(
+                                col("order_date"),
+                                "yyyy-MM-dd"
+                        )
+                )
 
-                // Month
-                .withColumn("month",
-                        month(col("order_date")))
+                .withColumn(
+                        "delivery_state",
+                        upper(col("delivery_state"))
+                )
 
-                // Year
-                .withColumn("year",
-                        year(col("order_date")))
+                .withColumn(
+                        "month",
+                        month(col("order_date"))
+                )
 
-                // Quarter
-                .withColumn("quarter",
-                        quarter(col("order_date")));
+                .withColumn(
+                        "year",
+                        year(col("order_date"))
+                )
+
+                .withColumn(
+                        "quarter",
+                        quarter(col("order_date"))
+                );
     }
 
 
@@ -118,27 +120,29 @@ public class TransformJob {
     /*
         FESTIVALS TABLE
      */
-    public static Dataset<Row> transformFestivals(Dataset<Row> festivals) {
+    public static Dataset<Row> transformFestivals(Dataset<Row> holidayDF) {
 
-        return festivals
-
-                .dropDuplicates()
-
-                .na().drop()
-
-                .withColumn("festival_name",
-                        initcap(col("event_name")))
-
-                .withColumn("holiday_flag",
-                        upper(col("holiday_flag")))
-
-                .withColumn("start_date",
-                        to_date(col("start_date"),
-                                "yyyy-MM-dd"))
-
-                .withColumn("end_date",
-                        to_date(col("end_date"),
-                                "yyyy-MM-dd"));
+        Dataset<Row> festivals = holidayDF
+                .dropDuplicates("event_id", "event_name", "start_date", "end_date")
+                .na().drop("all")
+                .withColumn("festival_name", functions.initcap(functions.col("event_name")))
+                .select(
+                        functions.col("event_id"),
+                        functions.col("event_name"),
+                        functions.col("start_date"),
+                        functions.col("end_date"),
+                        functions.col("festival_name")
+                );
+//        return holidayDF
+//                .dropDuplicates()
+//                .filter(
+//                        col("event_id").isNotNull()
+//                                .and(col("event_name").isNotNull())
+//                                .and(col("start_date").isNotNull())
+//                                .and(col("end_date").isNotNull())
+//                )
+//                .withColumn("festival_name", initcap(col("event_name")));
+        return festivals;
     }
 
     public static Dataset<Row> transformOrderItems(Dataset<Row> orderItems){

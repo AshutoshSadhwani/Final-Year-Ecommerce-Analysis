@@ -24,6 +24,11 @@ public class ExtractJob {
         System.out.println("\n========== EXTRACT PHASE ==========\n");
 
         products = CSVReader.readCSV(spark, "Products.csv");
+
+        System.out.println("\n========== PRODUCTS SCHEMA ==========");
+        products.printSchema();
+        products.show(5, false);
+
         customers = CSVReader.readCSV(spark, "Customers.csv");
         orders = CSVReader.readCSV(spark, "Orders.csv");
         orderItems = CSVReader.readCSV(spark, "Order_Items.csv");

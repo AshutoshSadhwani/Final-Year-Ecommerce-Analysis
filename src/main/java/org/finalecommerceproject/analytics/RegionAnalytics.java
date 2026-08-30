@@ -8,71 +8,59 @@ import static org.apache.spark.sql.functions.*;
 public class RegionAnalytics {
 
     /*
-        State Wise Revenue
+     * Region-Wise Sales According to States
+     *
+     * Orders:
+     * order_id, customer_id, order_date, payment_method,
+     * delivery_city, delivery_state, total_amount
+     *
+     * State_Region:
+     * state, region
      */
 
-    public static void stateRevenue(Dataset<Row> orders){
+    public static void regionWiseSalesByState(
+            Dataset<Row> orders,
+            Dataset<Row> stateRegion) {
 
-        System.out.println("\n========== STATE WISE REVENUE ==========");
+        System.out.println("\n==============================================");
+        System.out.println("        REGION-WISE SALES BY STATE");
+        System.out.println("==============================================");
 
-        orders.groupBy("state")
-                .agg(
-                        round(sum("total_amount"),2)
-                                .alias("Revenue")
+        // Join Orders with State_Region
+        Dataset<Row> salesWithRegion = orders
+                .join(
+                        stateRegion,
+                        orders.col("delivery_state")
+                                .equalTo(stateRegion.col("state")),
+                        "left"
+                );
+
+        // Calculate sales according to region and state
+        Dataset<Row> regionWiseSales = salesWithRegion
+                .groupBy(
+                        stateRegion.col("region"),
+                        orders.col("delivery_state")
                 )
-                .orderBy(desc("Revenue"))
-                .show(false);
-
-    }
-
-    /*
-        Region Wise Revenue
-     */
-
-    public static void regionRevenue(Dataset<Row> orders){
-
-        System.out.println("\n========== REGION WISE REVENUE ==========");
-
-        orders.groupBy("region")
                 .agg(
-                        round(sum("total_amount"),2)
-                                .alias("Revenue")
+                        countDistinct(
+                                orders.col("order_id")
+                        ).alias("total_orders"),
+
+                        round(
+                                sum(orders.col("total_amount")),
+                                2
+                        ).alias("total_sales")
                 )
-                .orderBy(desc("Revenue"))
-                .show(false);
+                .withColumnRenamed(
+                        "delivery_state",
+                        "state"
+                )
+                .orderBy(
+                        col("region"),
+                        col("total_sales").desc()
+                );
 
+        // Display result on console
+        regionWiseSales.show(false);
     }
-
-    /*
-        Top 5 States
-     */
-
-    public static void topStates(Dataset<Row> orders){
-
-        System.out.println("\n========== TOP STATES ==========");
-
-        orders.groupBy("state")
-                .agg(sum("total_amount").alias("Revenue"))
-                .orderBy(desc("Revenue"))
-                .limit(5)
-                .show(false);
-
-    }
-
-    /*
-        Lowest 5 States
-     */
-
-    public static void bottomStates(Dataset<Row> orders){
-
-        System.out.println("\n========== LOWEST STATES ==========");
-
-        orders.groupBy("state")
-                .agg(sum("total_amount").alias("Revenue"))
-                .orderBy("Revenue")
-                .limit(5)
-                .show(false);
-
-    }
-
 }

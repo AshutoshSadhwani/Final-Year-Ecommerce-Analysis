@@ -1,16 +1,26 @@
 package org.finalecommerceproject;
 
+import org.finalecommerceproject.analytics.ProductAnalytics;
+import org.finalecommerceproject.analytics.RegionAnalytics;
 import org.finalecommerceproject.etl.ExtractJob;
 import org.finalecommerceproject.etl.TransformJob;
 import org.finalecommerceproject.etl.WriteData;
 
 public class FinalEcommerceAnalysisApplication {
+
     public static void main(String[] args) {
 
-        // Extract
+        // ==============================
+        // EXTRACT
+        // ==============================
+
         ExtractJob.execute();
 
-        // Transform
+
+        // ==============================
+        // TRANSFORM
+        // ==============================
+
         ExtractJob.products =
                 TransformJob.transformProducts(ExtractJob.products);
 
@@ -27,9 +37,30 @@ public class FinalEcommerceAnalysisApplication {
                 TransformJob.transformRegions(ExtractJob.stateRegion);
 
         ExtractJob.holidayCalendar =
-                TransformJob.transformFestivals(ExtractJob.holidayCalendar);
+                TransformJob.transformFestivals(
+                        ExtractJob.holidayCalendar
+                );
 
-        // Load
+
+        // ==============================
+        // ANALYSIS
+        // ==============================
+
+        ProductAnalytics.bestSellingProductByCategory(
+                ExtractJob.products,
+                ExtractJob.orderItems
+        );
+
+        RegionAnalytics.regionWiseSalesByState(
+                ExtractJob.orders,
+                ExtractJob.stateRegion
+        );
+
+
+        // ==============================
+        // LOAD
+        // ==============================
+
         WriteData.loadProducts(ExtractJob.products);
         WriteData.loadCustomers(ExtractJob.customers);
         WriteData.loadOrders(ExtractJob.orders);
@@ -37,7 +68,9 @@ public class FinalEcommerceAnalysisApplication {
         WriteData.loadRegions(ExtractJob.stateRegion);
         WriteData.loadFestivals(ExtractJob.holidayCalendar);
 
-        System.out.println("Project Finished Successfully.");
 
+        System.out.println("\n==============================================");
+        System.out.println("       PROJECT FINISHED SUCCESSFULLY");
+        System.out.println("==============================================");
     }
 }
