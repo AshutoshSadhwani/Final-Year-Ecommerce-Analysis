@@ -90,4 +90,14 @@ public class WriteData {
     public static void loadFestivals(Dataset<Row> df) {
         writeData(df, "FESTIVALS");
     }
+
+
+
+    public static void loadCustomerLifetimeValue(
+            Dataset<Row> clvResults) {
+
+        writeData(clvResults, "CUSTOMER_LIFETIME_VALUE");
+    }
+
+
 }

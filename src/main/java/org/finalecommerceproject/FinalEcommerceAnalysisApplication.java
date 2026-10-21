@@ -1,11 +1,12 @@
+
 package org.finalecommerceproject;
 
-import org.finalecommerceproject.analytics.ProductAnalytics;
-import org.finalecommerceproject.analytics.RegionAnalytics;
 import org.finalecommerceproject.etl.ExtractJob;
 import org.finalecommerceproject.etl.TransformJob;
 import org.finalecommerceproject.etl.WriteData;
-import org.finalecommerceproject.analytics.SeasonalityAnalytics;
+import org.finalecommerceproject.analytics.CustomerLifetimeValueAnalytics;
+import org.apache.spark.sql.Dataset;
+import org.apache.spark.sql.Row;
 
 public class FinalEcommerceAnalysisApplication {
 
@@ -14,14 +15,11 @@ public class FinalEcommerceAnalysisApplication {
         // ==============================
         // EXTRACT
         // ==============================
-
         ExtractJob.execute();
-
 
         // ==============================
         // TRANSFORM
         // ==============================
-
         ExtractJob.products =
                 TransformJob.transformProducts(ExtractJob.products);
 
@@ -38,45 +36,12 @@ public class FinalEcommerceAnalysisApplication {
                 TransformJob.transformRegions(ExtractJob.stateRegion);
 
         ExtractJob.holidayCalendar =
-                TransformJob.transformFestivals(
-                        ExtractJob.holidayCalendar
-                );
+                TransformJob.transformFestivals(ExtractJob.holidayCalendar);
 
 
         // ==============================
-        // ANALYSIS
+        // LOAD TRANSFORMED TABLES
         // ==============================
-
-        ProductAnalytics.bestSellingProductByCategory(
-                ExtractJob.products,
-                ExtractJob.orderItems
-        );
-
-        RegionAnalytics.regionWiseSalesByState(
-                ExtractJob.orders,
-                ExtractJob.stateRegion
-        );
-
-        // Analyze monthly, quarterly, and holiday sales patterns.
-        SeasonalityAnalytics seasonality =
-                new SeasonalityAnalytics(
-                        ExtractJob.orders,
-                        ExtractJob.holidayCalendar
-                );
-
-        System.out.println("\n===== MONTHLY SALES TREND =====");
-        seasonality.monthlySalesTrend().show(12, false);
-
-        System.out.println("\n===== QUARTERLY SALES TREND =====");
-        seasonality.quarterlySalesTrend().show(false);
-
-        System.out.println("\n===== HOLIDAY SALES IMPACT =====");
-        seasonality.holidaySalesImpact().show(20, false);
-
-        // ==============================
-        // LOAD
-        // ==============================
-
         WriteData.loadProducts(ExtractJob.products);
         WriteData.loadCustomers(ExtractJob.customers);
         WriteData.loadOrders(ExtractJob.orders);
@@ -84,6 +49,28 @@ public class FinalEcommerceAnalysisApplication {
         WriteData.loadRegions(ExtractJob.stateRegion);
         WriteData.loadFestivals(ExtractJob.holidayCalendar);
 
+        // ==============================
+        // CUSTOMER LIFETIME VALUE
+        // ==============================
+        Dataset<Row> clvResults =
+                CustomerLifetimeValueAnalytics.analyze(
+                        ExtractJob.orders,
+                        ExtractJob.customers
+                );
+
+        WriteData.loadCustomerLifetimeValue(clvResults);
+
+        // ==============================
+        // INTERACTIVE ANALYTICS MENU
+        // ==============================
+        AnalyticsMenu.show(
+                ExtractJob.products,
+                ExtractJob.customers,
+                ExtractJob.orders,
+                ExtractJob.orderItems,
+                ExtractJob.stateRegion,
+                ExtractJob.holidayCalendar
+        );
 
         System.out.println("\n==============================================");
         System.out.println("       PROJECT FINISHED SUCCESSFULLY");
