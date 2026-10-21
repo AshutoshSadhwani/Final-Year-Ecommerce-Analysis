@@ -5,6 +5,7 @@ import org.finalecommerceproject.analytics.RegionAnalytics;
 import org.finalecommerceproject.etl.ExtractJob;
 import org.finalecommerceproject.etl.TransformJob;
 import org.finalecommerceproject.etl.WriteData;
+import org.finalecommerceproject.analytics.SeasonalityAnalytics;
 
 public class FinalEcommerceAnalysisApplication {
 
@@ -56,6 +57,21 @@ public class FinalEcommerceAnalysisApplication {
                 ExtractJob.stateRegion
         );
 
+        // Analyze monthly, quarterly, and holiday sales patterns.
+        SeasonalityAnalytics seasonality =
+                new SeasonalityAnalytics(
+                        ExtractJob.orders,
+                        ExtractJob.holidayCalendar
+                );
+
+        System.out.println("\n===== MONTHLY SALES TREND =====");
+        seasonality.monthlySalesTrend().show(12, false);
+
+        System.out.println("\n===== QUARTERLY SALES TREND =====");
+        seasonality.quarterlySalesTrend().show(false);
+
+        System.out.println("\n===== HOLIDAY SALES IMPACT =====");
+        seasonality.holidaySalesImpact().show(20, false);
 
         // ==============================
         // LOAD

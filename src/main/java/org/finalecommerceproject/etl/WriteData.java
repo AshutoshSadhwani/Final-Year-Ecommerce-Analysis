@@ -6,107 +6,83 @@ import org.apache.spark.sql.Row;
 public class WriteData {
 
     private static final String URL =
-            "jdbc:oracle:thin:@localhost:1521:xe";
+            "jdbc:mysql://localhost:3307/ecommerce_analysis";
 
-    private static final String USER = "system";
-    private static final String PASSWORD = "{Db_Password}";
-    private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
+    private static final String USER = "root";
+    private static final String PASSWORD = "root";
+    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
-    public static void loadProducts(Dataset<Row> df){
+    // Common method to load data into MySQL
+    private static void writeData(
+            Dataset<Row> df,
+            String tableName) {
 
-        df.write()
-                .format("jdbc")
-                .option("url",URL)
-                .option("driver",DRIVER)
-                .option("dbtable","PRODUCTS")
-                .option("user",USER)
-                .option("password",PASSWORD)
-                .mode("overwrite")
-                .save();
+        try {
+            df.write()
+                    .format("jdbc")
+                    .option("url", URL)
+                    .option("driver", DRIVER)
+                    .option("dbtable", tableName)
+                    .option("user", USER)
+                    .option("password", PASSWORD)
+                    .mode("overwrite")
+                    .save();
 
-        System.out.println("Products Loaded.");
+            System.out.println(
+                    tableName + " Loaded Successfully into MySQL."
+            );
+
+        } catch (Exception e) {
+
+            System.err.println(
+                    "Error loading " + tableName + " into MySQL."
+            );
+
+            e.printStackTrace();
+
+            throw new RuntimeException(
+                    "Failed to load table: " + tableName, e
+            );
+        }
     }
 
-    public static void loadCustomers(Dataset<Row> df){
 
-        df.write()
-                .format("jdbc")
-                .option("url",URL)
-                .option("driver",DRIVER)
-                .option("dbtable","CUSTOMERS")
-                .option("user",USER)
-                .option("password",PASSWORD)
-                .mode("overwrite")
-                .save();
-
-        System.out.println("Customers Loaded.");
+    // Load Products
+    public static void loadProducts(Dataset<Row> df) {
+        writeData(df, "PRODUCTS");
     }
 
-    public static void loadOrders(Dataset<Row> df){
 
-        df.write()
-                .format("jdbc")
-                .option("url",URL)
-                .option("driver",DRIVER)
-                .option("dbtable","ORDERS")
-                .option("user",USER)
-                .option("password",PASSWORD)
-                .mode("overwrite")
-                .save();
-
-        System.out.println("Orders Loaded.");
+    // Load Customers
+    public static void loadCustomers(Dataset<Row> df) {
+        writeData(df, "CUSTOMERS");
     }
 
-    public static void loadRegions(Dataset<Row> df){
 
-        df.write()
-                .format("jdbc")
-                .option("url",URL)
-                .option("driver",DRIVER)
-                .option("dbtable","REGIONS")
-                .option("user",USER)
-                .option("password",PASSWORD)
-                .mode("overwrite")
-                .save();
-
-        System.out.println("Regions Loaded.");
+    // Load Orders
+    public static void loadOrders(Dataset<Row> df) {
+        writeData(df, "ORDERS");
     }
 
-    public static void loadFestivals(Dataset<Row> df){
 
-        df.write()
-                .format("jdbc")
-                .option("url",URL)
-                .option("driver",DRIVER)
-                .option("dbtable","FESTIVALS")
-                .option("user",USER)
-                .option("password",PASSWORD)
-                .mode("overwrite")
-                .save();
-
-        System.out.println("Festivals Loaded.");
+    // Load Order Items
+    public static void loadOrderItems(Dataset<Row> df) {
+        writeData(df, "ORDER_ITEMS");
     }
-    public static void loadOrderItems(Dataset<Row> df){
 
-        df.write()
 
-                .format("jdbc")
-
-                .option("url",URL)
-
-                .option("driver",DRIVER)
-
-                .option("dbtable","ORDER_ITEMS")
-
-                .option("user",USER)
-
-                .option("password",PASSWORD)
-
-                .mode("overwrite")
-
-                .save();
-
-        System.out.println("Order Items Loaded.");
+    // Load State and Region data
+    public static void loadRegions(Dataset<Row> df) {
+        writeData(df, "REGIONS");
     }
+
+
+    // Load Festival and Holiday data
+    public static void loadFestivals(Dataset<Row> df) {
+        writeData(df, "FESTIVALS");
+    }
+
+
+
 
 }
